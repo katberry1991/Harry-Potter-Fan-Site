@@ -13,6 +13,43 @@
  	margin: 1%;
  }
 
+ /* Container holding the image and the text */
+.wrapper {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+  color: #9400D3;
+  background-color: #FFDF00; 
+  opacity: 0.65; 
+  width: 100%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.centered2 {
+  position: absolute;
+  top: 50%;
+  left: 49.2%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5em;
+  color: #9400D3;
+  background-color: #FFDF00; 
+  opacity: 0.68; 
+  width: 89.5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+
 #footer {
 	text-align: center;
 	font-size: 16px;

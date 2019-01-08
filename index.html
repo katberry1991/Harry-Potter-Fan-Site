@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width", initial-scale=1>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<!--Add Font Awesome for logo, nav toggle, etc.-->
 </head>
 <body>
 
@@ -13,7 +14,7 @@
 		<span class="navbar-toggle" id="js-navbar-toggle">
             <i class="fas fa-bars"></i>
         </span>
-        <a href="#home" class="logo">HP<span><i class="fas fa-bolt"></i></span>Fansite</a>
+        <a href="#home" class="logo">HP<span><i class="fas fa-bolt"></i></span>Fansite</a> <!--Include span to add logo character-->
         <ul class="main-nav" id="js-menu">
             <li>
                 <a href="#about" class="nav-links">About the Series</a>
@@ -34,13 +35,16 @@
 </nav>
 
 
-	<div class="row">
+	<div class="row"> <!--Remove 3 col grid desktop per section-->
 	  	<div class="col" class="container" id="home">
+	  	<!--'col' class used to stack content in columns on top of eachother for mobile view-->
 			<div class="slider-outer">
     		<img src="images/arrow-left.png" class="prev" alt="Prev">
 			<div class="slider-inner">
-			<img src="images/home.jpg" class="active">
-			<img src="images/home2.jpg">
+			<div class="wrapper"> <!--Contains image and overlating text-->
+			<img src="images/about.jpg" class="active">
+			<img src="images/home2.jpg"></div>
+			<div class="centered2">Welcome to my Harry Potter Fan Site</div> <!--Text centered over images-->
 			</div>
 			<img src="images/arrow-right.png" class="next" alt="Next">
     		</div>
@@ -48,11 +52,15 @@
 	</div>
 
 
-	<div class="row" id="about" >
-		<div class="col"><img src="images/about.jpg" height="100%" width="100%"></div>
+	<div class="row" id="about">
+	<div class="wrapper">
+		<div class="col" style="height: 400px;"><img src="images/redbg.jpg" height="100%" width="100%">
+		 <div class="centered">About the Series</div>
+	</div>
+		</div>
 	</div>
 
-	<div class="row" class="margin">
+	<div class="row" class="margin"><!--Add margin for <p> elements-->
 		<div class="col">
 		<h2>About the Series</h2>
 		<p>Harry Potter is a series of fantasy novels written by British author J. K. Rowling. The novels chronicle the lives of a young wizard, Harry Potter, and his friends Hermione Granger and Ron Weasley, all of whom are students at Hogwarts School of Witchcraft and Wizardry. The main story arc concerns Harry's struggle against Lord Voldemort, a dark wizard who intends to become immortal, overthrow the wizard governing body known as the Ministry of Magic, and subjugate all wizards and Muggles (non-magical people).</p>
@@ -67,7 +75,10 @@
 	</div>
 
 	<div class="row" id="protagonists">
-		<div class="col" class="height"><img src="images/protagonists.jpg" height="100%" width="100%"></div> 
+		<div class="wrapper">
+		<div class="col" style="height: 400px"><img src="images/redbg.jpg" height="100%" width="100%"></div> 
+		<div class="centered">Protagonists</div>
+		</div>
 	</div>
 
 	<div class="row">
@@ -87,8 +98,11 @@
 	</div>
 
 	<div class="row" id="hogwarts">
-		<div class="col"><img src="images/hogwarts.jpg" height="100%" width="100%">
+		<div class="wrapper">
+		<div class="col" style="height: 400px"><img src="images/redbg.jpg" height="100%" width="100%">
 		</div> 
+		<div class="centered">Hogwarts</div>
+		</div>
 	</div>
 
 	<div class="col">
@@ -129,7 +143,10 @@
 	</div>
 
 	<div class="row" id="locations">
-		<div lass="col"><img src="images/locations.jpg" height="100%" width="100%">
+		<div class="wrapper">
+		<div lass="col" style="height: 400px"><img src="images/redbg.jpg" height="100%" width="100%">
+		<div class="centered">Other Locations</div>
+		</div>
 		</div>
 	</div>
 	<div class="col">
