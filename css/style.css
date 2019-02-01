@@ -13,6 +13,8 @@
  	margin: 1%;
  }
 
+
+
  /* Container holding the image and the text */
 .wrapper {
   position: relative;
@@ -181,14 +183,6 @@ p, h2 {
 	.row {
 		flex-direction: row;
 	}
-
-}
-
-@media all and (max-width: 320px) {
-
-.next{
-  margin-top: -120px;
-}
 
 }
 
