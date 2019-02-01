@@ -69,6 +69,13 @@
 body {
     font-family: 'Josefin Sans', sans-serif;
 }
+
+p, h2 {
+
+  margin-left: 2.5%; 
+  margin-right: 2.5%;
+}
+
 .navbar {
     font-size: 18px;
     background-color: #800020; 
@@ -176,6 +183,15 @@ body {
 	}
 
 }
+
+@media all and (max-width: 320px) {
+
+.next{
+  margin-top: -120px;
+}
+
+}
+
 
 @media screen and (min-width: 768px) {
     .navbar {
